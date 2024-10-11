@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "wildberriesbot"
+version = "0.1.0"
+description = ""
+authors = ["Rex6961 <aon777ar@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.13.1"
+apscheduler = "^3.10.4"
+aio-pika = "^9.4.3"
+
+
+[tool.poetry.group.protect.dependencies]
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.data-base.dependencies]
+sqlalchemy = "^2.0.35"
+aiosqlite = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
